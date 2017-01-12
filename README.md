@@ -6,10 +6,12 @@ An HTTP echo service for golang
     $ $GOPATH/bin/ecgo
 
 ## Docker
-  * Build the image
-    $ docker build -t ecgo:dev .
+1. Build the image
+ 
+        $ docker build -t ecgo:dev .
 
-  * To run using docker:
-    $ docker run --name ecgo -p 8082:8080 -d ecgo:dev
+2. To run using docker:
 
-  * Then curl (or browse) port 8082 of your docker host to see the headers.
+        $ docker run --name ecgo -p 8082:8080 -d ecgo:dev
+
+3. Then curl (or browse) port 8082 of your docker host to see the headers.
