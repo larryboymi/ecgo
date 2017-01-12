@@ -12,6 +12,12 @@ type echo struct {
 }
 
 func handler(w http.ResponseWriter, r *http.Request) {
+
+	if r.URL.Path != "/" {
+		http.NotFound(w, r)
+		return
+	}
+
 	var request []string
 	// Loop through headers
 	for name, headers := range r.Header {
