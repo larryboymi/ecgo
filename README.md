@@ -8,7 +8,7 @@ An HTTP echo service for golang
 ## Docker
 1. Build the image
 
-        $ docker build --build-arg GO_MAIN=github.com/ocelotconsulting/ecgo -t ecgo:dev .
+        $ docker build --build-arg GO_MAIN=github.com/ocelotconsulting/ecgo  --build-arg GO_MAIN_EXEC=ecgo -t ecgo:dev .
 
 2. To run using docker:
 
